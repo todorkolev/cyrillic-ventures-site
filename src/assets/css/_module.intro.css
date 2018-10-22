@@ -4,7 +4,7 @@
 
 .intro { position: relative; background-size: cover; background-repeat: no-repeat; background-position: top center; height: 920px; }
 
-.intro .intro__inner { position: absolute; top: 16.5%; transform: translateY(-50%); left: 0; width: 100%; }
+.intro .intro__inner { position: absolute; top: 18%; transform: translateY(-50%); left: 0; width: 100%; }
 
 .intro .intro__content { text-align: center; color: #fff; }
 
@@ -40,8 +40,6 @@ $breakpoint-tablet-portrait {
 
 $breakpoint-mobile {
 	.intro { height: calc(100vh - 137px); }
-
-	
 
 	.intro .title h1 { font-size: 27px; }
 }

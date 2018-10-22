@@ -30,6 +30,11 @@
 
 	$('.btn--close-members').on('click', function(event) {
 		$('.section--team').removeClass('visible');		
+
+		$([document.documentElement, document.body]).animate({
+			scrollTop: 0
+		}, 1000);
+
 		event.preventDefault();
 	});
 
