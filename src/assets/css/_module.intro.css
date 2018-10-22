@@ -1,0 +1,89 @@
+/* ------------------------------------------------------------ *\
+	Intro
+\* ------------------------------------------------------------ */
+
+.intro { position: relative; background-size: cover; background-repeat: no-repeat; background-position: top center; height: 920px; }
+
+.intro .intro__inner { position: absolute; top: 16.5%; transform: translateY(-50%); left: 0; width: 100%; }
+
+.intro .intro__content { text-align: center; color: #fff; }
+
+.intro .title h1 { font-size: 65px; font-weight: 300; letter-spacing: -0.03em; }
+.intro .title h1 span { display: inline-block; transform: scaleX(-1); font-weight: 100; }
+
+.intro .title a { position: relative; text-decoration: none; font-weight: bold; letter-spacing: -0.02em; }
+.intro .title a:after { content: ''; width: 100%; max-width: 100%; height: 3px; background: #fff; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); transition: width .4s;}
+
+@media(min-width: 1025px) {
+	.intro .title a:hover:after { width: 0; }
+}
+
+$breakpoint-small-desktop {
+	.intro { height: 720px; }
+}
+
+@media(max-width: 1024px) {
+	.intro { height: calc(100vh - 242px); }
+
+	.intro .title h1 { font-size: 56px; }
+}
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.intro { height: calc(100vh - 190px); }
+
+	.intro .title h1 { font-size: 47px; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.intro { height: calc(100vh - 137px); }
+
+	
+
+	.intro .title h1 { font-size: 27px; }
+}
+
+/* ------------------------------------------------------------ *\
+	Intro secondary
+\* ------------------------------------------------------------ */
+
+.intro--secondary { height: auto; padding: 90px 0; }
+
+.intro--secondary a { position: relative; text-decoration: none; }
+.intro--secondary a:after { content: ''; width: 100%; max-width: 100%; height: 1px; background: #fff; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); transition: width .4s;}
+
+.intro--secondary ul,
+.intro--secondary ol { list-style-position: inside; }
+
+.intro--secondary ul li,
+.intro--secondary ol li { margin-top: 5px; }
+
+
+.intro--secondary .intro__inner { top: auto; position: static; transform: translateY(0); }
+
+.intro--secondary .intro__content { padding: 70px 30px; background: rgba(0, 0, 0, .8); text-align: left; }
+
+.intro--secondary .aligncenter { margin-bottom: 20px; }
+
+@media(min-width: 1025px) {
+	.intro--secondary a:hover:after { width: 0; }
+}
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.intro--secondary { padding: 70px 0; }
+
+	.intro--secondary .intro__content { padding: 50px 20px; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.intro--secondary { padding: 45px 0; }
+
+	.intro--secondary .intro__content { padding: 35px 10px; }
+}

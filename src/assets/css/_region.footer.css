@@ -1,0 +1,32 @@
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+
+.footer { position: relative; padding: 32px 0; background: #000000; color: #fff; z-index: 20; }
+
+.footer a { position: relative; font-size: 14px; text-decoration: none; transition: color .4s; padding-bottom: 2px; letter-spacing: -0.03em;}
+.footer a:after { content: ''; width: 0; max-width: 100%; height: 1px; background: #fff; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); transition: width .4s;}
+
+.footer .footer__inner { max-width: 624px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+
+@media(min-width: 1025px) {
+	.footer a:hover:after { width: 100%; }
+}
+
+@media(max-width: 1024px) {
+	.footer { padding: 25px 0; }
+}
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.footer { padding: 20px 0; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.footer { padding: 12px 0; }
+
+	.footer a { font-size: 12px; }
+}

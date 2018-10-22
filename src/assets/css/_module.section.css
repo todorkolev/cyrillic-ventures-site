@@ -1,0 +1,40 @@
+/* ------------------------------------------------------------ *\
+	Section team
+\* ------------------------------------------------------------ */
+
+.section--team { padding: 49px 0 135px; position: absolute; bottom: 84px; left: 0; width: 100%; transform: translateY(50%); visibility: hidden; opacity: 0; transition: transform .4s, visibility .4s, opacity .4s; background: #fff; }
+.section--team.visible { transform: translateY(0%); visibility: visible; opacity: 1; }
+
+.section--team .section__content { position: relative; padding: 85px 0 0; }
+
+.section--team .btn--close-members { position: absolute; top: 0; right: 12px; }
+
+$breakpoint-small-desktop {
+	.section--team { padding: 60px 0 70px; }
+
+	.section--team .section__content { padding: 45px 0 0; }
+}
+
+/* Tablet Portrait */
+
+@media(max-width: 1024px) {
+	.section--team { padding: 45px 0; bottom: 70px; }
+
+	.section--team .section__content { padding: 20px 0 0; }
+
+	.section--team .btn--close-members { right: 0; }
+}
+
+/* Tablet Portrait */
+
+$breakpoint-tablet-portrait {
+	.section--team { bottom: 60px; }
+}
+
+/* Mobile */
+
+$breakpoint-mobile {
+	.section--team { padding: 25px 0 5px; bottom: 41px; }
+
+	.section--team .section__content { padding: 0; }
+}
