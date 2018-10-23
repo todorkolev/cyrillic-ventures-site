@@ -33,7 +33,7 @@
 
 		$([document.documentElement, document.body]).animate({
 			scrollTop: 0
-		}, 1000);
+		}, 500);
 
 		event.preventDefault();
 	});
