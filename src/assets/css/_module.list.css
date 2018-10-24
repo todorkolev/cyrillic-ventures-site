@@ -3,3 +3,10 @@
 \* ------------------------------------------------------------ */
 
 [class^="list-"] { list-style: none outside none; }
+
+/* ------------------------------------------------------------ *\
+	List actions
+\* ------------------------------------------------------------ */
+
+.list--actions { display: flex; align-items: center; }
+.list--actions li + li { margin-left: 20px; }

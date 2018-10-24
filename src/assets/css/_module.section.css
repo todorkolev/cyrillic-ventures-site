@@ -2,7 +2,7 @@
 	Section team
 \* ------------------------------------------------------------ */
 
-.section--team { padding: 49px 0 135px; position: absolute; bottom: 84px; left: 0; width: 100%; transform: translateY(50%); visibility: hidden; opacity: 0; transition: transform .4s, visibility .4s, opacity .4s; background: #fff; }
+.section--team { padding: 49px 0 135px; position: absolute; bottom: 84px; left: 0; width: 100%; transform: translateY(50%); visibility: hidden; opacity: 0; transition: transform .4s, visibility .4s, opacity .4s; background: #fff; z-index: 30; }
 .section--team.visible { transform: translateY(0%); visibility: visible; opacity: 1; }
 
 .section--team .section__content { position: relative; padding: 85px 0 0; }
