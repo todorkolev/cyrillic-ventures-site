@@ -2,7 +2,7 @@
 	Intro
 \* ------------------------------------------------------------ */
 
-.intro { position: relative; background-size: cover; background-repeat: no-repeat; background-position: top center; height: 920px; }
+.intro { position: relative; background-size: cover; background-repeat: no-repeat; background-position: top center; height: 920px; min-height: calc(100vh - 302px); }
 
 .intro .intro__inner { position: absolute; top: 18%; transform: translateY(-50%); left: 0; width: 100%; }
 

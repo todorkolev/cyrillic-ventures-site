@@ -1,7 +1,6 @@
 # Task Runner
 Front-end tool for task automation.
 
-
 ## Tips
 Use bash terminal (default terminal on OSX and Linux, [GitBash](http://git-scm.com/downloads) on Windows).
 
