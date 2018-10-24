@@ -20,7 +20,7 @@
 
 	$('.btn--open-members').on('click', function(event) {
 		$('.section--team').addClass('visible');
-		
+
 		$([document.documentElement, document.body]).animate({
 			scrollTop: $("#team-section").offset().top
 		}, 1000);
@@ -29,11 +29,23 @@
 	});
 
 	$('.btn--close-members').on('click', function(event) {
-		$('.section--team').removeClass('visible');		
+		$('.section--team').removeClass('visible');
 
 		$([document.documentElement, document.body]).animate({
 			scrollTop: 0
 		}, 500);
+
+		event.preventDefault();
+	});
+
+	$('.btn--аccept-cookies').on('click', function(event) {
+		$('.footer__bar').addClass('hidden-bar');
+
+		event.preventDefault();
+	});
+
+	$('.btn-close-bar').on('click', function(event) {
+		$('.footer__bar').addClass('hidden-bar');
 
 		event.preventDefault();
 	});

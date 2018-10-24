@@ -17,3 +17,15 @@
 @media(min-width: 1025px) {
 	.btn--close-members:hover { opacity: .6; }
 }
+
+/* Button Grey */
+
+.btn--grey { padding: 2px 12px; background: linear-gradient(to bottom,#FEFEFE,#F4F4F4) repeat scroll 0 0 #F3F3F3; border-color: #BBB; color: #333; text-shadow: 0 1px 0 #FFF; border-radius: 3px 3px 3px 3px; border-style: solid; border-width: 1px; display: inline-block; font-size: 12px; font-style: normal; text-decoration: none; white-space: nowrap; }
+.btn--grey:after { display: none; }
+.btn--grey:hover { background: linear-gradient(to bottom,#FFFFFF,#F3F3F3) repeat scroll 0 0 #F3F3F3; border-color: #999; color: #222; }
+
+/* Button Close Bar */
+.btn-close-bar { position: relative; display: inline-block; width: 14px; height: 14px; text-decoration: none; transition: opacity .4s; }
+.btn-close-bar:hover { text-decoration: none; opacity: .7; }
+.btn-close-bar:before { content: ''; display: inline-block; width: 14px; height: 1px; transform: rotate(-45deg); position: absolute; top: 7px; left: 0; background: #fff; }
+.btn-close-bar:after { content: ''; display: inline-block; width: 14px; height: 1px; transform: rotate(45deg); position: absolute; top: 7px; left: 0; background: #fff; }

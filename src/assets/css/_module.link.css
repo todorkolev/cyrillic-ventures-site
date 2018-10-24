@@ -1,0 +1,6 @@
+/* ------------------------------------------------------------ *\
+	Link
+\* ------------------------------------------------------------ */
+
+.link--main { position: relative; font-size: 14px; text-decoration: none; transition: color .4s; padding-bottom: 2px; letter-spacing: -0.03em;}
+.link--main:after { content: ''; width: 0; max-width: 100%; height: 1px; background: #fff; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); transition: width .4s;}
